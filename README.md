@@ -1,5 +1,5 @@
 <p align = "center">
-<img src = "/latest.png"> <br>
+<img src = "Images/WorldLinesLogo.png"> <br>
 <a href="#abstract">Abstract</a> • <a href="#theory">Theory</a>  
 </p>
 
@@ -12,3 +12,8 @@ To elucidate more precisely, time here is comprised of infinite parallel lines c
 For instance, assume that a person died in the current timeline and in response to that you travel back in time to prevent his/her death. This action would create a divergence in the past from the time point of the person's death, resulting in two divergent world lines - one with the person's existence, and one without. The idea prevails for similar actions, wherein such changes induce the creation of multiple world lines. 
 
 Note that such events that trigger the splitting of world lines can be of lesser magnitude in effect than the aforementioned case (based on the existence of a person, which is a strong example), such as simply from a point where someone didn't buy a winning-lottery ticket to one where he/she did. (which is the example used to illustrate the Butterfly effect)
+
+Similar to the inclusion of divergence, there is this concept of convergence as well, which pertains to converging world lines. To elaborate on this, the term '**Attractor Field**' needs to be known as a pre-requisite, so quoting from the fandom's [wiki page](https://steins-gate.fandom.com/wiki/Attractor_Field): <br>
+*An Attractor Field is a cluster of world lines that lead to a single converging point. While each strand may be slightly different, they're ultimately part of the same great structure and yield the same end result.*
+
+The example used to convey this idea in the anime was the concept of a rope, held by its fibres. At a simple glance, a rope is unidirectional and comprised of interlocking threads, which can be thought of to represent the world lines. These threads although being twisted and different from each, altogether lock on to a converging point at the end of the rope, (plus move towards the same direction) which is the attractor field. Likewise, world lines are expected to have distinct individual changes, but for the ones in an attractor field, they all converge towards a specific event at a timestamp, something that will unequivocally occur.
