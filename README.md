@@ -1,5 +1,5 @@
 <p align = "center">
-<img src = "Images/WorldLinesLogo.png"> <br>
+<img src = "illustrations/WorldLinesLogo.png"> <br>
 <a href="#abstract">Abstract</a> • <a href="#theory">Theory</a>  
 </p>
 
@@ -21,7 +21,15 @@ The example used to convey this idea in the anime was the concept of a rope, hel
 Here is a mindmap I designed in XMind to illustrate this very concept with respect to an attractor field:
 
 <p align = "center">
-<img src = "/AttractorFieldMindmap.png">  
+<img src = "illustrations/AttractorFieldMindmap.png">  
 </p>
 
-The green lines are meant to illustrate the world lines (which are meant to be parallel, as shown inside the slate-coloured rectangles). They diverge/split at a few points by some events (am using dot-based notation to indicate the same, as used in networks), but since they all fall within the same attractor field, there is a common end result (which I termed to be the 'certain outcome') taking place irrespective of the varying changes in each segregated world line. Simply put, these world lines all converge to an event that is certain to happen, which is what the phenomenon of [world line convergence](https://steins-gate.fandom.com/wiki/World_Line_Convergence) implies.
+The green lines are meant to illustrate the world lines (which are meant to be parallel, as shown inside the slate-coloured rectangles). They diverge/split at a few points by some events (am using dot-based notation to indicate the same, as used in networks), but since they all fall within the same attractor field, there is a common end result (which I termed to be the 'certain outcome') taking place irrespective of the varying changes in each segregated world line. Simply put, these world lines all converge to an event that is certain to happen, which is what the phenomenon of [world line convergence](https://steins-gate.fandom.com/wiki/World_Line_Convergence) implies, with reference to an attractor field.
+
+World lines held by two of such fields are portrayed in Steins;Gate & Steins;Gate 0, one named '**Alpha**'(**α**) and one named '**Beta**'(**β**). There are, as I mentioned, specific events that are bound to happen for the world lines that are held within these attractor fields. These events include: 
+
+- The death of Mayuri Shiina in alpha.
+- The death of Kurisu Makise in beta.
+
+There are other effects in these world lines too (such as the creation of a dystopian world governed by SERN in alpha and the occurence of World War III in beta), but for this project am restricting myself to use only these for the purpose of determining the existence of these characters.
+
