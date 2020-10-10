@@ -28,10 +28,14 @@ Depicted in a shade of turqouise green are the world lines (which are meant to b
 
 World lines held by two of such fields are portrayed in Steins;Gate & Steins;Gate 0, one named '**Alpha**'(**α**) and one named '**Beta**'(**β**). There are, as I mentioned, specific events that are bound to happen for the world lines that are held within these attractor fields. These events include: 
 
-- The death of Mayuri Shiina in alpha.
-- The death of Kurisu Makise in beta.
+- The death of Mayuri Shiina in Alpha.
+- The death of Kurisu Makise in Beta.
 
 There are other effects in these world lines too (such as the creation of a dystopian world governed by SERN in alpha and the occurence of World War III in beta), but for this project am restricting myself to use only these for the purpose of determining the existence of these characters.
+
+Although the aforementioned deaths are inevitable in **α** and **β** respectively, they can both be avoided in the **Steins;Gate** world line, which lies between those attractor fields. Since it is loosely influenced by both the fields, it does not reach the final convergent result found in either field. In other words, both Mayuri and Kurisu are saved, (along with no negative impacts pressed on the world, due to Kurisu's thesis being ruinated, leaving no scope for time travel) which is portrayed as the ideal ending for the anime. 
+
+For the protagonist (Okabe Rintarou) to eventually reach this world line, he creates what he nomenclated to be the '[Divergence Meter](https://steins-gate.fandom.com/wiki/Divergence_Meter)'. This device is used to calculate the divergence number, which is a floating point representing the divergence value of the current world line in relation to the absolute world line of 0% divergence. For Alpha and Beta attractor fields, the values range between 0 to 0.99 and 1 to 1.99 respectively. For Steins;Gate, its the special number **1.048596**s, just crossing the 1% barrier.
 
 ## License
 
