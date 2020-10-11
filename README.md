@@ -35,7 +35,9 @@ There are other effects in these world lines too (such as the creation of a dyst
 
 Although the aforementioned deaths are inevitable in **α** and **β** respectively, they can both be avoided in the **Steins;Gate** world line, which lies between those attractor fields. Since it is loosely influenced by both the fields, it does not reach the final convergent result found in either field. In other words, both Mayuri and Kurisu are saved, (along with no negative impacts pressed on the world, due to Kurisu's thesis being ruinated, leaving no scope for time travel) which is portrayed as the ideal ending for the anime. 
 
-For the protagonist (Okabe Rintarou) to eventually reach this world line, he creates what he nomenclated to be the '[Divergence Meter](https://steins-gate.fandom.com/wiki/Divergence_Meter)'. This device is used to calculate the divergence number, which is a floating point representing the divergence value of the current world line in relation to the absolute world line of 0% divergence. For Alpha and Beta attractor fields, the values range between 0 to 0.99 and 1 to 1.99 respectively. For Steins;Gate, its the special number **1.048596**s, just crossing the 1% barrier.
+For the protagonist (Okabe Rintarou) to eventually reach this world line, he creates what he nomenclated to be the '[Divergence Meter](https://steins-gate.fandom.com/wiki/Divergence_Meter)'. This device is used to calculate the divergence number, which is a floating point representing the divergence value of the current world line in relation to the absolute world line of 0% divergence. For Alpha and Beta attractor fields, the values range between 0 to 0.99 and 1 to 1.99 respectively. For Steins;Gate, its the special number **1.048596**, just crossing the 1% barrier.
+
+Taking the number of world lines as user input, the program generates random divergence numbers of that count to associate them with the Alpha and Beta fields each. The average of these figures are taken and the divergence from the Steins;Gate line is calculated.
 
 ## License
 
