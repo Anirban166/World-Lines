@@ -4,6 +4,7 @@ import (
         "fmt"
         "log"
         "time"
+        "math"
         "runtime"
         "math/rand"
 )
@@ -31,6 +32,7 @@ func main() {
     attractorFields := 2 // Considering alpha & beta fields for the moment
 
     // Taking number of world lines as user-input, along with possible error:
+    fmt.Print("Enter the number of world lines to create: ")
     _, err := fmt.Scan(&worldLines)
     /* Feel free to take attractor fields (AF) into account as well, if required: 
        _, err := fmt.Scan(&worldLines, &attractorFields) */
@@ -49,7 +51,7 @@ func main() {
     c := make(chan []float64, attractorFields)
     
     // Initializing limits for the divergence numbers based on the number of attractor fields alotted:
-    divergenceBase, divergenceCap := 0.0, (0.99 + float64(attractorFields) - 1)
+    divergenceBase, divergenceCap := 0.0, (0.99 + float64(attractorFields) - 1.0)
     // Initially while scripting this, the inclusion of all attractor fields seemed suitable, which is what the code above is structured for.
     
     // Collect/Recieve the divergence numbers of the world lines in a bidirectional channel:
@@ -71,7 +73,9 @@ func main() {
         }
     }
 
-    averageDivergence := total / float64(len(divergenceNumbers))
-    fmt.Println("Alpha line:", alpha, "\nBeta line:", beta) 
-    fmt.Println("Average divergence:", averageDivergence)
+    average := total / float64(len(divergenceNumbers))
+    relativeDivergence := math.Abs(average - 1.048596)
+    fmt.Println("Alpha lines:", alpha, "\nBeta lines:", beta) 
+    fmt.Print("Divergence(%): ")
+    fmt.Printf("%.2f", relativeDivergence)
 }
