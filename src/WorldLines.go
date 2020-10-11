@@ -26,15 +26,16 @@ func divergenceNumberGenerator(lowerLimit, upperLimit float64, num int) []float6
 
 func main() { 
     
-    var i, worldLines int
-    attractorFields := 2 // Alpha, Beta
+    var (worldLines int
+         alpha, beta []float64)
+    attractorFields := 2 // Considering alpha & beta fields for the moment
 
-    // Take number of world lines as user-input, along with possible error:
+    // Taking number of world lines as user-input, along with possible error:
     _, err := fmt.Scan(&worldLines)
     /* Feel free to take attractor fields (AF) into account as well, if required: 
        _, err := fmt.Scan(&worldLines, &attractorFields) */
     
-    // Print error if applicable: (eg: negative units, resulting in panic for size out of range)
+    // Printing error if applicable: (eg: negative units, resulting in panic for size out of range)
     if err != nil {
       log.Println(err)
     }
@@ -47,22 +48,30 @@ func main() {
        store returned values (float64 slice) inside the goroutine: */
     c := make(chan []float64, attractorFields)
     
-    // Initialize divergence number limits for an attractor field, based on the standard range:
-    divergenceBase, divergenceCap := 0.0, 0.99
+    // Initializing limits for the divergence numbers based on the number of attractor fields alotted:
+    divergenceBase, divergenceCap := 0.0, (0.99 + float64(attractorFields) - 1)
+    // Initially while scripting this, the inclusion of all attractor fields seemed suitable, which is what the code above is structured for.
     
-    /* Initial intent on scripting: Inclusion of all attractor fields, which is what the code below is structured for.
-       However after much thought, I realized there wasn't much to do with the other world lines (!alpha/beta)
-       so the loop wasn't necessary. (two calls to the generator function or 2 goroutines would have sufficed)
-    */
-    for i < attractorFields { 
-        go func() {
-            c <- divergenceNumberGenerator(divergenceBase + float64(i), divergenceCap + float64(i), worldLines)
-            i += 1
-        }()
-   }
+    // Collect/Recieve the divergence numbers of the world lines in a bidirectional channel:
+    go func() {
+        c <- divergenceNumberGenerator(divergenceBase, divergenceCap, worldLines)
+    }()
+    
+    // Send it from the channel to a variable: ([]float64)
+    divergenceNumbers := <-c
+    total := 0.0
 
-   alpha := <-c
-   beta := <-c
+    // Collect the numbers on new slices based on corresponding attractor field ranges:
+    for _, divergenceNumber := range divergenceNumbers {
+        total += divergenceNumber  // try using defer
+        if divergenceNumber <= 0.99 && divergenceNumber >= 0.0 {
+            alpha = append(alpha, divergenceNumber)  
+        } else {
+          beta = append(beta, divergenceNumber)
+        }
+    }
 
-   fmt.Println("Alpha line:", alpha, "\nBeta line:", beta) 
+    averageDivergence := total / float64(len(divergenceNumbers))
+    fmt.Println("Alpha line:", alpha, "\nBeta line:", beta) 
+    fmt.Println("Average divergence:", averageDivergence)
 }
