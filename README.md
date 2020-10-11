@@ -1,6 +1,6 @@
 <p align = "center">
 <img src = "illustrations/WorldLinesLogo.png"> <br>
-<a href="#abstract">Abstract</a> • <a href="#theory">Theory</a> • <a href="#what-does-the-code-do?">Code</a> • <a href="#extras">Extras</a> 
+<a href="#abstract">Abstract</a> • <a href="#theory">Theory</a> • <a href="#what-does-the-code-do">Code</a> • <a href="#extras">Extras</a> 
 </p>
 
 ---
@@ -38,14 +38,14 @@ Although the aforementioned deaths are inevitable in **α** and **β** respectiv
 For the protagonist (Okabe Rintarou) to eventually reach this world line, he creates what he nomenclated to be the '[Divergence Meter](https://steins-gate.fandom.com/wiki/Divergence_Meter)'. This device is used to calculate the divergence number, which is a floating point representing the divergence value of the current world line in relation to the absolute world line of 0% divergence. For Alpha and Beta attractor fields, the values range between 0 to 0.99 and 1 to 1.99 respectively. For Steins;Gate, its the special number **1.048596**, just crossing the 1% barrier.
 
 ## What does the code do?
-For the moment, its a pretty simple program which just serves as rng-based divergence calculator to compute your odds with respect to Steins;Gate.
+For the moment, its a pretty simple program which just serves as a rng-based divergence calculator with respect to Steins;Gate.
 
-Taking the number of world lines as user input, the code generates random divergence numbers of that count to associate them with the Alpha and Beta fields each. The average of these figures are taken and the divergence from the Steins;Gate line is calculated. Additional attractor fields (such as **γ** & **δ**) can be accustomed, but they seemed unnecessary due to the lack of association with the anime series.
+Taking the number of world lines as user input, the code generates random divergence numbers of that count to associate them with the Alpha and Beta fields each. The average of these figures are taken and the divergence from the Steins;Gate line is calculated. Additional attractor fields (such as **γ** & **δ**) can be accommodated, but to include them here felt unnecessary due to the lack of association with the anime series.
 
 ## Extras
 A few thoughts/notes: (spoilers included!)
 - Names from the anime that tend to represent real-world entities are changed by a letter to avoid copyright issues, such as the IBM 5100 was made to be IBN 5100 and CERN was made to be SERN.
-- Although Steins;Gate 0 is comparatively disconsolate to many, the ending shines some light for saving Suzuha & Mayuri. I believe this was required in one way, since the later episodes from the OG series + the movie mostly focused on Kurisu. 
+- Although Steins;Gate 0 is comparatively disconsolate to many, the ending shines some light for Okabe saving Suzuha & Mayuri. I believe this was required in one way, since the later episodes from the OG series + the movie mostly focused on Kurisu. 
 - The visual novel (VN) is worth reading, provided you have time for it. 
 - Follow this watch order for a serial progress of events:
 ```go
@@ -58,7 +58,8 @@ Timeline
 └──> Load Region of Déjà Vu (The movie)
 ```
 Go downwards one step at a time, and watch the mentioned episode(s) towards the end of each line.
-- The anime has a bit of complexity, so as a side-effect of coming this far, this readme might help the reader strengthen his/her understanding about the aforementioned concepts in Steins;Gate, or in turn confuse them all the more :)
+
+The anime has a bit of complexity, so as a side-effect of scrolling this far, this readme might help the readers strengthen his/her understanding about the aforementioned concepts in Steins;Gate, or in turn confuse them all the more :)
 
 ## License
 
