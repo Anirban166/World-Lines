@@ -18,15 +18,15 @@ func divergenceNumberGenerator(lowerLimit, upperLimit float64, num int) []float6
     for i := range result {
         result[i] = lowerLimit + rand.Float64() * (upperLimit - lowerLimit)
     }
-    
-    // Setting seed based on time to avoid storing the same results time and again:
-    rand.Seed(time.Now().UnixNano())
 
     return result
 }
 
 func main() { 
     
+    // Setting seed based on time to avoid storing the same results time and again:
+    rand.Seed(time.Now().UnixNano())
+
     var (worldLines int
          alpha, beta []float64)
     attractorFields := 2 // Considering alpha & beta fields for the moment
@@ -77,5 +77,5 @@ func main() {
     relativeDivergence := math.Abs(average - 1.048596)
     fmt.Println("Alpha lines:", alpha, "\nBeta lines:", beta) 
     fmt.Print("Divergence(%): ")
-    fmt.Printf("%.2f", relativeDivergence)
+    fmt.Printf("%.2f\n", relativeDivergence)
 }
