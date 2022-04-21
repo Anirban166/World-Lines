@@ -1,5 +1,5 @@
 <p align = "center">
-<img src = "Images/WorldLinesLogo.png"> <br>
+<img src = "Images/RevampedLogo.png" width = "50%" height = "auto"> <br>
 <a href="#abstract">Abstract</a> • <a href="#theory">Theory</a> • <a href="#what-does-the-code-do">Code</a> • <a href="#extras">Extras</a> 
 </p>
 
